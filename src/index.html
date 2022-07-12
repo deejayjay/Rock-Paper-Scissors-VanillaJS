@@ -15,6 +15,20 @@
       content="A simple implementation of the rock paper scissors game built using HTML, CSS/Scss & JavaScript"
     />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome import -->
+    <script
+      src="https://kit.fontawesome.com/a0058dad5f.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- User Styles -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -22,6 +36,36 @@
     <script type="module" src="js/index.js"></script>
   </head>
   <body>
-    <h1>Rock Paper Scissors Go...</h1>
+    <header class="header">
+      <h1 class="title">Rock Paper Scissors</h1>
+      <p class="tagline">Go...</p>
+    </header>
+    <main>
+      <section class="computer-wrapper">
+        <h2>
+          Computer - <span class="result-computer" id="resultComputer">0</span>
+        </h2>
+      </section>
+      <section class="actions-wrapper">
+        <button id="btnRock" class="btn-action btn-rock" data-choice="rock">
+          <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+        <button id="btnPaper" class="btn-action btn-paper" data-choice="paper">
+          <i class="fa-solid fa-hand"></i>
+        </button>
+        <button
+          id="btnScissors"
+          class="btn-action btn-scissors"
+          data-choice="scissors"
+        >
+          <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+      </section>
+      <section class="player-wrapper">
+        <h2>
+          Player Score - <span class="result-player" id="resultPlayer">0</span>
+        </h2>
+      </section>
+    </main>
   </body>
 </html>

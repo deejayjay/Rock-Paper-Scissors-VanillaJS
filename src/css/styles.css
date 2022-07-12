@@ -414,8 +414,92 @@ body {
 }
 
 body {
-  background-color: rebeccapurple;
-  color: whitesmoke;
+  background-color: #0f172a;
+  color: #34d399;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1rem;
+}
+
+.header {
+  margin: 1.5rem 0;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header .title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.header .tagline {
+  font-size: 1.5rem;
+  color: #059669;
+}
+
+.computer-wrapper,
+.actions-wrapper,
+.player-wrapper {
+  display: flex;
+  justify-content: center;
+  color: #0f172a;
+}
+
+.computer-wrapper h2,
+.player-wrapper h2 {
+  width: 100%;
+  margin: 4rem 0;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  background-color: #fb923c;
+  text-align: center;
+}
+
+.computer-wrapper h2 {
+  margin-top: 3rem;
+}
+
+.btn-action {
+  margin: 0 1.5rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 56px;
+  height: 59px;
+  color: #0f172a;
+  transition: all 0.5s ease;
+}
+.btn-action:hover {
+  cursor: pointer;
+}
+.btn-action:focus {
+  cursor: pointer;
+}
+.btn-action i {
+  font-size: 1.5rem;
+}
+.btn-action.btn-rock {
+  background-color: #f43f5e;
+}
+.btn-action.btn-rock:active {
+  color: #f43f5e;
+}
+.btn-action.btn-paper {
+  background-color: #fcd34d;
+}
+.btn-action.btn-paper:active {
+  color: #fcd34d;
+}
+.btn-action.btn-scissors {
+  background-color: #22c55e;
+}
+.btn-action.btn-scissors:active {
+  color: #22c55e;
+}
+.btn-action.btn-rock:active, .btn-action.btn-paper:active, .btn-action.btn-scissors:active {
+  background-color: #0f172a;
+  transform: scale(2);
 }
 
 /*# sourceMappingURL=styles.css.map */
